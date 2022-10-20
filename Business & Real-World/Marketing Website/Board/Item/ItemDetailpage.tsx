@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { Link, useParams } from "react-router-dom";
-import { ProductList } from "../../store/ProductList";
+import { ProductList } from "../../store/Context";
 import style from "./ItemDetailpage.module.css"
 export const ItemDetailpage = () => {
     const products = useContext(ProductList)
@@ -13,7 +13,7 @@ export const ItemDetailpage = () => {
 
 
     return (<div className={style.itemStyle} >
-                <Link className={style.backMain} to={"/"}> perfume</Link>
+        <Link className={style.backMain} to={"/"}> perfume</Link>
         <img src={item.img}></img>
         <ul>
             <li>  {item.name}</li>
@@ -21,8 +21,8 @@ export const ItemDetailpage = () => {
             <li>  {`price: ${item.price}`} </li>
             <li> {`information: ${item.information}`}</li>
         </ul >
-     <button> 장바구니 </button>
-     <button> 바로구매 </button>
+        <button> 장바구니 </button>
+        <button> 바로구매 </button>
 
 
     </div>)

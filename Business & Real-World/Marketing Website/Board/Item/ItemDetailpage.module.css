@@ -1,9 +1,10 @@
-.itemStyle{
+.itemStyle {
     background-color: pink;
 }
-.backMain{
+
+.backMain {
     display: flex;
-     height: 60px;
+    height: 60px;
     width: 300px;
     background-image: url(../../Img/shutterstock_565659754.webp);
     background-size: cover;
